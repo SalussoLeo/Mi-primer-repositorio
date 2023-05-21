@@ -15,7 +15,7 @@ footer {
     display: flex;
     flex-direction: column;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 'header header header'
         'section section aside'
@@ -87,12 +87,12 @@ footer {
     display: flex;
     margin: 10px 20px;
     justify-content: space-between;
-    width: 1100 px;
     flex-flow: row wrap;
 }
 
 .cuerpo {
     grid-area: section;
+    
 }
 
 .cuerpo h1 {
