@@ -8,6 +8,7 @@
     <!-- tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>Contactanos</title>
 </head>
@@ -19,6 +20,7 @@
         </div>
 
         <nav class="navbar">
+            
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="./galeria.html">Galeria</a></li>
@@ -28,27 +30,34 @@
             </ul>
         </nav>
 
-
     </header>
-    <main class="main-contact">
+
+    <main class="form-floating">
         <form class="formulario" action="" method="post">
-            <h2 class="hcontact">Dejanos tu opinion</h2>
-            <label for="nombre">Nombre</label>
-            <input type="text">
+            <div class="form-floating">
+                <input type="nombre" class="form-control" placeholder="Nombre">
+                <label for="floatingPassword">Nombre</label>
+            </div>
+            <div class="form-floating">
+                <input type="number" class="form-control" placeholder="Numero">
+                <label for="floatingPassword">Telefono</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comentarios</label>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="submit">Enviar</button>
+                <button class="btn btn-primary" type="reset">Borrar</button>
+            </div>
 
-            <label for="Telefono">Telefono</label>
-            <input type="number">
-
-            <label for="nombre">Gmail</label>
-            <input type="email">
-
-            <label for="text">Comentario</label>
-            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-
-            <button class="button" type="submit">Enviar</button>
-            <button class="button" type="reset">Borrar</button>
         </form>
     </main>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 <footer class="pie-footer">
