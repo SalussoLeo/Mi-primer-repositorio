@@ -10,6 +10,7 @@ footer {
     color: cadetblue;
 }
 
+/* CADA CSS TIENE SU COMENTARIO SEPARANDOLO: */
 /* CSS DEL INDEX */
 .cuerpo-index {
     display: flex;
@@ -21,7 +22,6 @@ footer {
         'section section aside'
         'footer footer footer'
     ;
-    background-color: rgb(240, 240, 221);
 }
 
 .cabecera {
@@ -93,7 +93,7 @@ footer {
 
 .cuerpo {
     grid-area: section;
-    
+
 }
 
 .cuerpo h1 {
@@ -196,91 +196,157 @@ footer {
     grid-area: aside;
 }
 
-
 .pie-index {
     grid-area: footer;
     /* border: 1px solid black; */
     margin: 10px;
 }
 
+/* RESPONSIVE DE INDEX */
+@media (max-width: 1060px) {
+    .men1 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+    .men2 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+    .men3 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+    .men4 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+    .men5 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+    .men6 {
+        flex-direction: column-reverse;
+    }
+}
 
 /* CSS DE GALERIA */
-img{
+img {
     width: 100%;
 }
-.row{
+
+.row {
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
 }
-.column{
+
+.column {
     flex: 25%;
     padding: 5px;
 }
-.column img{
+
+.column img {
     margin-top: 5px;
 }
-@media (max-width: 800px){
-    .column{
+
+/* RESPONSIVE DE GALERIA */
+@media (max-width: 800px) {
+    .column {
         flex: 50%;
     }
 }
-@media (max-width: 600px){
-    .column{
+
+@media (max-width: 600px) {
+    .column {
         flex: 100%;
     }
 }
 
 /* CSS MEJORES JUGADAS */
-.body-mj{
-    background-color: rgb(240, 240, 221);
-}
-iframe{
+
+iframe {
     width: 100%;
 }
-.videos-row{
+
+.videos-row {
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
 }
-.videos-column{
+
+.videos-column {
     flex: 25%;
+    padding: 5px;
+
 }
-.column iframe{
+
+.column iframe {
     margin-top: 5px;
 }
-@media (max-width: 800px){
-    .videos-column{
+
+/* RESPONSIVE DE MEJORES JUGADAS */
+@media (max-width: 800px) {
+    .videos-column {
         flex: 50%;
     }
 }
-@media (max-width: 600px){
-    .videos-column{
+
+@media (max-width: 600px) {
+    .videos-column {
         flex: 100%;
     }
 }
 
 /* CSS NOTICIAS */
 
-.body-noticias{
-    background-color: rgb(240, 240, 221);
+.flex-noticias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.grid {
-    display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .grid-item img {
-    max-width: 100%;
-    height: auto;
-  }
+.flex-item {
+    width: 25%;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media (max-width: 1060px) {
+    .flex-noticias {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        align-self:center;
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .flex-noticias {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .flex-item {
+        align-self: center;
+        width: 80%;
+    }
+}
 
 /* CSS CONTACTANOS */
-.body-contact{
-    background-color: rgb(240, 240, 221);
-}
+
 .main-contact {
     display: flex;
     flex-direction: column;
