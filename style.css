@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(240, 240, 221); */
+}
+
+footer {
+
+    color: cadetblue;
+}
+
+/* CSS DEL INDEX */
+.cuerpo-index {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'header header header'
+        'section section aside'
+        'footer footer footer'
+    ;
+    background-color: rgb(240, 240, 221);
+}
+
+.cabecera {
+    display: flex;
+    flex-flow: column wrap;
+    grid-area: header;
+}
+
+.cabecera .logo {
+    margin-left: 350px;
+    margin-bottom: 10px;
+    ;
+}
+
+.cabecera .navbar {
+
+    margin-bottom: 50px;
+}
+
+.cabecera .navbar ul {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    width: 100%;
+    /* margin-left: 500px; */
+    background-color: cadetblue;
+
+}
+
+.cabecera .navbar ul li {
+    margin: 10px;
+    list-style: none;
+
+}
+
+.cabecera .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    background-color: cadetblue;
+}
+
+.cabecera .navbar ul li a:hover {
+    border: 1px solid cadetblue;
+
+}
+
+.cabecera .navbar ul li a:link {
+    font-weight: bold;
+}
+
+.cabecera .navbar ul li a:visited {
+    font-weight: 0;
+    color: rgb(240, 240, 221);
+}
+
+.jugadores {
+    grid-area: section;
+    display: grid;
+    grid-row-gap: 20px;
+    display: flex;
+    margin: 10px 20px;
+    justify-content: space-between;
+    width: 1100 px;
+    flex-flow: row wrap;
+}
+
+.cuerpo {
+    grid-area: section;
+}
+
+.cuerpo h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cuerpo p {
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+.men1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    /* border: 1px solid black; */
+}
+
+.men1 .pjordan {
+    margin: 5px 5px;
+}
+
+.imgjordan {
+    height: 220px;
+}
+
+.men2 {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: left;
+}
+
+.men2 .pginobili {
+    margin: 5px 5px;
+}
+
+.men3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    /* border: 1px solid black; */
+}
+
+.men3 .pnash {
+    margin: 5px 5px;
+}
+
+.men4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* border: 1px solid black; */
+}
+
+.men4 .prondo {
+    margin: 5px 5px;
+}
+
+.men5 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.men5 img {
+    margin-right: 5px;
+}
+
+.men6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* border: 1px solid black; */
+}
+
+.button-main {
+    margin: 10px;
+    border: none;
+}
+
+.button-main a {
+    text-decoration: none;
+    background-color: cadetblue;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-main a:hover {
+    background-color: aquamarine;
+    font-weight: bolder;
+}
+
+.publicidad {
+    /* border: 1px solid red;*/
+    grid-area: aside;
+}
+
+
+.pie-index {
+    grid-area: footer;
+    /* border: 1px solid black; */
+    margin: 10px;
+}
+
+
+/* CSS DE GALERIA */
+
+
+/* CSS MEJORES JUGADAS */
+.body-mj{
+    background-color: rgb(240, 240, 221);
+}
+main .videos {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(240, 240, 221);
+    margin-bottom: 20px;
+}
+
+/* CSS NOTICIAS */
+
+.body-noticias{
+    background-color: rgb(240, 240, 221);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* CSS CONTACTANOS */
+.body-contact{
+    background-color: rgb(240, 240, 221);
+}
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-area: 'header header header'
+        'body aside'
+        'footer footer footer'
+    ;
+
+}
+
+.main-contact {
+    grid-area: body;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    width: 200px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: aquamarine;
+    font-weight: bolder;
+}
+
+.aside-contact {
+    grid-area: aside;
+}
+
+.pie-footer {
+    grid-area: footer;
+    margin-left: 10px;
+}
