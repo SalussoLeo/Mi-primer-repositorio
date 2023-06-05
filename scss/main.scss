@@ -1,0 +1,99 @@
+$primary-color: hsl(182, 25%, 50%, 0.5);
+$secundary-color: #6b6b83;
+$terciary-color: hsl(252, 26%, 39%, 0.4);
+
+.cabecera {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom, $primary-color, white);
+
+    .logo {
+        height: 110px;
+        width: 1fr;
+        max-width: 500px;
+    }
+
+    .navbar {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 90%;
+
+        ul {
+            li {
+                a {
+                    font-weight: bolder;
+                    color: $secundary-color;
+                }
+
+                a:hover {
+                    transform: scale (1.2);
+                    color: $secundary-color;
+                }
+
+                a:active {
+                    transform: scale (1.2);
+                    color: $secundary-color;
+                }
+
+                a:visited {
+                    color: $secundary-color;
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+}
+
+.body-gral {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+    .cuerpo {
+        width: 70%;
+    }
+
+    .publicidad {
+        height: auto;
+        float: right;
+        width: 29%;
+        padding-left: 15px;
+        padding-top: 15px;
+        margin-left: 15px;
+    }
+
+    footer {
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    /* NOTICIAS */
+    .flex-noticias {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+
+        .flex-item {
+            border: 1px solid black;
+            width: 25%;
+            padding: 5px;
+            margin: 5px;
+            flex: 10%;
+            display: flex;
+            flex-direction: column;
+            .contenido{
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+            .card-footer {
+                padding: 10px;
+                background: $secundary-color;
+            }
+        }
+    }
+
+}

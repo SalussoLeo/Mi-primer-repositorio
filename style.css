@@ -11,31 +11,6 @@ footer {
 
 /* CADA CSS TIENE SU COMENTARIO SEPARANDOLO: */
 /* CSS DEL INDEX */
-.cuerpo-index {
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 'header header header'
-        'section section aside'
-        'footer footer footer'
-    ;
-}
-
-.cabecera {
-    display: flex;
-    flex-flow: column wrap;
-    grid-area: header;
-    align-items: center;
-}
-
-.cabecera .logo {
-    height: 210px;
-    width: 50%;
-    max-width: 500px;
-    min-width: 300px;
-}
 
 /* @media (max-width: 800px) {
     .body-contact{
@@ -44,17 +19,12 @@ footer {
     }
 } */
 
-.cabecera .navbar {
-    margin-bottom: 30px;
-    width: 100%;
-}
 
 .cabecera .navbar ul {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     width: 100%;
-    background-color: cadetblue;
 }
 
 body .cabecera .navbar ul li {
@@ -68,23 +38,6 @@ body .cabecera .navbar ul li a {
     font-weight: 200;
 }
 
-body .cabecera .navbar ul li a:hover {
-   color: aqua;
-   font-size: 23px;
-}
-
-body .cabecera .navbar ul li a:link {
-    font-weight: bold;
-}
-body .cabecera .navbar ul li a:active{
-    font-size: 23px;
-}
-
-body .cabecera .navbar ul li a:visited {
-    font-weight: 0;
-    color: black;
-}
-
 .jugadores {
     grid-area: section;
     display: grid;
@@ -95,10 +48,6 @@ body .cabecera .navbar ul li a:visited {
     flex-flow: row wrap;
 }
 
-.cuerpo {
-    grid-area: section;
-
-}
 
 .cuerpo h1 {
     text-align: center;
@@ -311,19 +260,6 @@ iframe {
     }
 }
 
-/* CSS NOTICIAS */
-
-.flex-noticias {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.flex-item {
-    width: 25%;
-    padding: 5px;
-    margin: 5px;
-}
 
 @media (max-width: 1060px) {
     .flex-noticias {
@@ -392,9 +328,4 @@ iframe {
 
 .aside-contact {
     grid-area: aside;
-}
-
-.pie-footer {
-    grid-area: footer;
-    margin-left: 10px;
 }
