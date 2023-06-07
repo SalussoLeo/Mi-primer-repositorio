@@ -1,67 +1,84 @@
-$primary-color: hsl(182, 25%, 50%, 0.5);
-$secundary-color: #6b6b83;
-$terciary-color: hsl(252, 26%, 39%, 0.4);
+@import "_colors";
+@import "_reset";
+@import "_header";
 
-.cabecera {
-    display: flex;
-    margin-bottom: 50px;
+/*index*/
+.body-gral {
     width: 100%;
-    background: linear-gradient(to bottom, $primary-color, white);
 
-    .logo {
-        height: 110px;
-        width: 1fr;
-        max-width: 500px;
-    }
+    main {
 
-    .navbar {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 90%;
+        .grid-container-index {
+            justify-content: start;
+            display: grid;
+            grid-template-areas:
+                "c1 c1 aside"
+                "c2 c3 aside"
+                "c4 c4 c4"
+                "c5 c6 c6"
+                "footer footer footer"
+            ;
+            /*  grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto; */
+            margin: 0 auto;
 
-        ul {
-            li {
-                a {
-                    font-weight: bolder;
-                    color: $secundary-color;
+
+            .jugadores {
+                width: 200px;
+                =height: auto;
+                border: 1px solid black;
+                background-color: antiquewhite;
+                margin: 15px;
+                text-align: center;
+                line-height: normal;
+
+                img:not(.img1) {
+
+                    height: 300px;
                 }
 
-                a:hover {
-                    transform: scale (1.2);
-                    color: $secundary-color;
+                img {
+                    margin: 10px;
+                    width: 200px;
                 }
 
-                a:active {
-                    transform: scale (1.2);
-                    color: $secundary-color;
-                }
+                p {}
+            }
 
-                a:visited {
-                    color: $secundary-color;
-                    font-weight: 500;
+            .c1 {
+                grid-area: c1 c1;
+                width: 100%;
+            }
 
-                }
+            .c2 {
+                grid-area: c2;
+            }
+
+            .c3 {
+                grid-area: c3;
+            }
+
+            .c4 {
+                grid-area: c4;
+            }
+
+            .c5 {
+                grid-area: c5;
+            }
+
+            .c6 {
+                grid-area: c6;
+            }
+
+            .pie-index {
+                grid-area: footer;
             }
         }
     }
-}
 
-.body-gral {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-
-    .cuerpo {
-        width: 70%;
-    }
 
     .publicidad {
-        height: auto;
-        float: right;
-        width: 29%;
-        padding-left: 15px;
-        padding-top: 15px;
-        margin-left: 15px;
+        grid-area: aside;
     }
 
     footer {
@@ -69,30 +86,56 @@ $terciary-color: hsl(252, 26%, 39%, 0.4);
         margin-top: 50px;
     }
 
-    /* NOTICIAS */
-    .flex-noticias {
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
+    /* noticias */
+    .grid-container {
 
-        .flex-item {
-            border: 1px solid black;
-            width: 25%;
-            padding: 5px;
-            margin: 5px;
-            flex: 10%;
-            display: flex;
-            flex-direction: column;
-            .contenido{
-                flex-grow: 1;
-                flex-shrink: 1;
+        h2 {
+            margin-bottom: 25px;
+            font-size: 40px;
+        }
+
+        article {
+            width: 330px;
+            height: 430px;
+            margin-left: 100px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px;
+            text-align: center;
+            transition: all 0.3s;
+
+            article:hover {
+
+                box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .contenido {
+                img {
+                    transform: translateY (-15px);
+                    transition: 0.5s;
+                    width: 330px;
+                    height: 220px;
+                }
+
+                h4 {
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                }
             }
 
             .card-footer {
-                padding: 10px;
-                background: $secundary-color;
+
+                a {
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $primary-color;
+                }
             }
+
         }
     }
 

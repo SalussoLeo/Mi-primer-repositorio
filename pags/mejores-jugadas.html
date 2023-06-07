@@ -9,6 +9,7 @@
     <!-- tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>Mejores jugadas</title>
@@ -16,19 +17,33 @@
 
 <body class="body-gral">
     <header class="cabecera">
-        <div>
-            <img class="logo" src="../img/portada-cabecera.jpg" alt="jugador de basquet">
-        </div>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="#">Mejores jugadas</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand logo-pelota" href="#"><img class="img-logo" src="../img/fabicon.jfif" alt="logo-pelota" width="100px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./mejores-jugadas.html">Mejores jugadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./noticias.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="videos-row">
@@ -77,13 +92,14 @@
                 allowfullscreen></iframe>
         </section>
     </main>
-</body>
-<footer class="pie-mj">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eligendi aliquid quisquam architecto hic
-        quasi aliquam dolores tempora at veniam dolorum praesentium quibusdam magnam nesciunt labore pariatur, illo,
-        iure aperiam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus rerum, voluptate
-        dolore consequatur provident exercitationem perferendis expedita enim magnam possimus, fugit velit officiis
-        reiciendis reprehenderit non, quis sapiente dolor.</p>
-</footer>
+    <footer class="pie-mj">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eligendi aliquid quisquam architecto hic
+            quasi aliquam dolores tempora at veniam dolorum praesentium quibusdam magnam nesciunt labore pariatur, illo,
+            iure aperiam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus rerum, voluptate
+            dolore consequatur provident exercitationem perferendis expedita enim magnam possimus, fugit velit officiis
+            reiciendis reprehenderit non, quis sapiente dolor.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
 
+    </body>
 </html>

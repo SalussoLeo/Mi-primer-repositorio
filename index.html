@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,500;0,700;1,100&display=swap"
         rel="stylesheet">
+    <link rel="import" href="./img/bar-de-hamburguesas.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Home</title>
@@ -20,133 +22,136 @@
 <body class="body-gral">
 
     <header class="cabecera">
-        <div>
-            <img class="logo" src="./img/portada-cabecera.jpg" alt="jugador de basquet">
-        </div>
-
-        <nav class="navbar" id="navb">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pags/galeria.html">Galeria</a></li>
-                <li><a href="./pags/mejores-jugadas.html">Mejores jugadas</a></li>
-                <li><a href="./pags/noticias.html">Noticias</a></li>
-                <li><a href="./pags/contactanos.html">Contactanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-pelota" href="#"><img class="img-logo" src="./img/fabicon.jfif"
+                        alt="logo-pelota" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pags/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pags/mejores-jugadas.html">Mejores jugadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pags/noticias.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pags/contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="cuerpo">
+    <main>
 
-        <section class="jugadores">
-            <h1>Nuestras estrellas</h1>
+        <h1>Nuestras estrellas</h1>
+        <section class="grid-container-index">
 
-            <div class="men1">
-                <div class="pjordan">
-                    <h3>Michael Jordan</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eligendi saepe vel
-                        voluptatem aliquam eum placeat dolor facere velit! Incidunt iusto asperiores ratione id
-                        accusamus ab expedita facere unde odit! Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sunt quaerat ipsa magnam commodi, aperiam dolore veniam fugiat perferendis amet ipsum id
-                        consequatur eum maxime distinctio, similique quae officiis autem officia? lorem
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa
-                        pariatur. Debitis fugit
-                        quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
-                        perferendis
-                        libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
-                        illo labore ab vitae, id eos natus optio excepturi saepe cumque?
-                    </p>
-                </div>
-                <img class="imgjordan" src="./img/Michael-jordan_1.jpg" alt="Michael Jordan">
+            <div class="jugadores c-1">
+                <h3>Michael Jordan</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eligendi saepe vel
+                    voluptatem aliquam eum placeat dolor facere velit! Incidunt iusto asperiores ratione id
+                    accusamus ab expedita facere unde odit! Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Sunt quaerat ipsa magnam commodi, aperiam dolore veniam fugiat perferendis amet ipsum id
+                    consequatur eum maxime distinctio, similique quae officiis autem officia? lorem
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa
+                    pariatur. Debitis fugit
+                    quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
+                    perferendis
+                    libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
+                    illo labore ab vitae, id eos natus optio excepturi saepe cumque?
+                </p>
+                <img class="imgjordan img1" src="./img/michael-jordan-23.jpg" alt="Michael Jordan">
             </div>
 
-            <div class="men2">
-                <div class="pginobili">
-                    <h3>Emanuel Ginobili</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
-                        fugit
-                        quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
-                        perferendis
-                        libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
-                        illo labore ab vitae, id eos natus optio excepturi saepe cumque?
-                    </p>
-                </div>
-                <img class="img" src="./img/Manu-ginobili.jpg" alt="Manuel Ginobili">
-
+            <div class="jugadores c2">
+                <h3>Emanuel Ginobili</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
+                    fugit
+                    quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
+                    perferendis
+                    libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
+                    illo labore ab vitae, id eos natus optio excepturi saepe cumque?
+                </p>
+                <img class="img" src="./img/Ginobili-20.jpg" alt="Manuel Ginobili">
             </div>
 
-            <div class="men3">
-                <div class="pnash">
-                    <h3>Steve Nash</h3>
-
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
-                        fugit
-                        quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
-                        perferendis
-                        libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
-                        illo labore ab vitae, id eos natus optio excepturi saepe cumque?Lorem ipsum dolor sit amet
-                        consectetur, adipisicing elit. Dolorum maiores eum earum iusto ab! Itaque non quia, dolores
-                        architecto aliquam iure at, laborum rerum ullam necessitatibus labore. Minima, totam Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Quidem, numquam quae. Sapiente itaque reprehenderit
-                        quos cupiditate adipisci repudiandae, similique ratione at ab in dicta optio eius voluptas
-                        facere fuga libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam
-                        nostrum fugit debitis distinctio excepturi earum alias saepe iste at aut veniam dicta porro, non
-                        adipisci exercitationem blanditiis? Possimus, dicta.
-                    </p>
-                </div>
-                <img class="img" src="./img/steve-nash.jpg" alt="Steve Nash">
+            <div class="jugadores c3">
+                <h3>Steve Nash</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
+                    fugit
+                    quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
+                    perferendis
+                    libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
+                    illo labore ab vitae, id eos natus optio excepturi saepe cumque?Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorum maiores eum earum iusto ab! Itaque non quia, dolores
+                    architecto aliquam iure at, laborum rerum ullam necessitatibus labore. Minima, totam Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Quidem, numquam quae. Sapiente itaque reprehenderit
+                    quos cupiditate adipisci repudiandae, similique ratione at ab in dicta optio eius voluptas
+                    facere fuga libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam
+                    nostrum fugit debitis distinctio excepturi earum alias saepe iste at aut veniam dicta porro, non
+                    adipisci exercitationem blanditiis? Possimus, dicta.
+                </p>
+                <img class="img" src="./img/Steve-10.jpg" alt="Steve Nash">
             </div>
 
-            <div class="men4">
-                <div class="prondo ">
-                    <h3>Rajon Rondo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
-                        fugit
-                        quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
-                        perferendis
-                        libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
-                        illo labore ab vitae, id eos natus optio excepturi saepe cumque? Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Amet, ipsam. Nisi quas fugiat accusantium repellendus, ducimus
-                        dolores veritatis expedita quasi quos cum, ipsum placeat veniam. Corrupti laborum id itaque
-                        tempore.
-                    </p>
-                </div>
-                <img src="./img/rajon-rondo.jpg" alt="Rajon Rondo">
+            <div class="jugadores c4">
+                <h3>Rajon Rondo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
+                    fugit
+                    quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
+                    perferendis
+                    libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
+                    illo labore ab vitae, id eos natus optio excepturi saepe cumque? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Amet, ipsam. Nisi quas fugiat accusantium repellendus, ducimus
+                    dolores veritatis expedita quasi quos cum, ipsum placeat veniam. Corrupti laborum id itaque
+                    tempore.
+                </p>
+                <img src="./img/rajon-rondo-9.jpg" alt="Rajon Rondo">
             </div>
 
-            <div class="men5">
-                <div class="pdirck ">
-                    <h3>Dirk Nowitsky</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
-                        fugit
-                        quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
-                        perferendis
-                        libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
-                        illo labore ab vitae, id eos natus optio excepturi saepe cumque? Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Amet, ipsam. Nisi quas fugiat accusantium repellendus, ducimus
-                        dolores veritatis expedita quasi quos cum, ipsum placeat veniam. Corrupti laborum id itaque
-                        tempore.
-                    </p>
-                </div>
-                <img src="./img/dirk-nowitzki.jpg" alt="Dirck Nowitsky">
+            <div class="jugadores c5">
+                <h3>Dirk Nowitsky</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
+                    fugit
+                    quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
+                    perferendis
+                    libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
+                    illo labore ab vitae, id eos natus optio excepturi saepe cumque? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Amet, ipsam. Nisi quas fugiat accusantium repellendus, ducimus
+                    dolores veritatis expedita quasi quos cum, ipsum placeat veniam. Corrupti laborum id itaque
+                    tempore.
+                </p>
+                <img src="./img/dirk-nowitz.jpg" alt="Dirck Nowitsky">
             </div>
-            <div class="men6">
-                <div class="pkoby">
-                    <h3>Kobe Briant</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
-                        fugit
-                        quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
-                        perferendis
-                        libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
-                        illo labore ab vitae, id eos natus optio excepturi saepe cumque? Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Amet, ipsam. Nisi quas fugiat accusantium repellendus, ducimus
-                        dolores veritatis expedita quasi quos cum, ipsum placeat veniam. Corrupti laborum id itaque
-                        tempore.
-                    </p>
-                </div>
-                <img src="./img/kobe-bryant.jpg" alt="Rajon Rondo">
+
+            <div class="jugadores c6">
+                <h3>Kobe Briant</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate ipsa pariatur. Debitis
+                    fugit
+                    quasi officiis voluptate obcaecati error quae laborum! Adipisci corrupti nesciunt ipsa
+                    perferendis
+                    libero nam maiores in fugit consequuntur id. Architecto animi, beatae autem, ratione repudiandae
+                    illo labore ab vitae, id eos natus optio excepturi saepe cumque? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Amet, ipsam. Nisi quas fugiat accusantium repellendus, ducimus
+                    dolores veritatis expedita quasi quos cum, ipsum placeat veniam. Corrupti laborum id itaque
+                    tempore.
+                </p>
+                <img src="./img/kobe-bryant-23-_1_.jpg" alt="Rajon Rondo">
             </div>
         </section>
-        <button class="button-main"><a href="#navb">UP</a></button>
     </main>
 
     <aside class="publicidad">
@@ -167,33 +172,33 @@
             Commodi voluptatem, assumenda eius doloribus distinctio amet voluptatum vero pariatur, debitis, harum
             praesentium. Ipsa, itaque quo. Amet rem odio asperiores perspiciatis, sequi repudiandae libero iste nisi
             voluptatibus vitae expedita eligendi!
-            <h3>Aca habra publicidad</h3>
-            Saepe maiores fugit ratione porro quia ullam provident facere aliquam quas illum sapiente voluptas illo qui
-            neque eveniet natus et ea accusamus, minus quod cupiditate! Id sapiente facere ipsum velit.
-            Voluptate dolorum, accusantium consequatur commodi animi odio perferendis ut, praesentium voluptas ullam
-            expedita asperiores esse modi voluptatem! Ut, laborum molestiae. Minus, sint porro libero non recusandae
-            officia sit saepe obcaecati.
-            <h3>Aca habra publicidad</h3>
-            Dolorum at incidunt rem officiis id a amet, assumenda, magni voluptatum exercitationem sequi obcaecati eius
-            iste aperiam dolores dolore recusandae! Sapiente iure illo cupiditate laborum quos officiis beatae
-            doloremque mollitia.
-            Quis iure, sint est doloremque maiores officiis ipsum in nulla dolor, dolorem voluptatum, numquam minima
-            omnis repudiandae cupiditate impedit non voluptas nam consequatur tempore quo at ex et? Debitis, voluptates.
-            Sed, atque inventore quia possimus velit pariatur earum, laboriosam, molestiae beatae dicta magni! Eveniet,
-            error ab in libero eaque recusandae, mollitia molestias incidunt molestiae expedita sequi voluptas excepturi
-            vitae repellat.
-            <h3>Aca habra publicidad</h3>
-            Quisquam, doloremque accusantium. Officiis, nesciunt corporis facilis voluptatibus doloribus repellat
-            reiciendis quas animi nulla fugiat quae sint id dolores ipsa accusamus saepe sequi iste pariatur
-            exercitationem veritatis eum quia. Vel.
-            Officia deleniti atque neque perspiciatis nesciunt suscipit ipsa vero, itaque unde eum odio quod libero modi
-            quae eveniet? Repellendus saepe, fuga quia aliquam consequuntur tempora numquam earum soluta rem rerum.
-            <h3>Aca habra publicidad</h3>
-            Alias quas eveniet architecto reprehenderit porro aut dolor! Odit aut praesentium, commodi architecto beatae
-            magnam sit eveniet, molestias quibusdam itaque perferendis, eos eligendi ipsum ut qui. Perferendis ullam qui
-            vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsam reiciendis doloremque laborum,
-            corporis fuga dolor reprehenderit deserunt! Rem, ab ducimus unde iure sunt odio. Incidunt reprehenderit sint
-            aut quas!
+        <h3>Aca habra publicidad</h3>
+        Saepe maiores fugit ratione porro quia ullam provident facere aliquam quas illum sapiente voluptas illo qui
+        neque eveniet natus et ea accusamus, minus quod cupiditate! Id sapiente facere ipsum velit.
+        Voluptate dolorum, accusantium consequatur commodi animi odio perferendis ut, praesentium voluptas ullam
+        expedita asperiores esse modi voluptatem! Ut, laborum molestiae. Minus, sint porro libero non recusandae
+        officia sit saepe obcaecati.
+        <h3>Aca habra publicidad</h3>
+        Dolorum at incidunt rem officiis id a amet, assumenda, magni voluptatum exercitationem sequi obcaecati eius
+        iste aperiam dolores dolore recusandae! Sapiente iure illo cupiditate laborum quos officiis beatae
+        doloremque mollitia.
+        Quis iure, sint est doloremque maiores officiis ipsum in nulla dolor, dolorem voluptatum, numquam minima
+        omnis repudiandae cupiditate impedit non voluptas nam consequatur tempore quo at ex et? Debitis, voluptates.
+        Sed, atque inventore quia possimus velit pariatur earum, laboriosam, molestiae beatae dicta magni! Eveniet,
+        error ab in libero eaque recusandae, mollitia molestias incidunt molestiae expedita sequi voluptas excepturi
+        vitae repellat.
+        <h3>Aca habra publicidad</h3>
+        Quisquam, doloremque accusantium. Officiis, nesciunt corporis facilis voluptatibus doloribus repellat
+        reiciendis quas animi nulla fugiat quae sint id dolores ipsa accusamus saepe sequi iste pariatur
+        exercitationem veritatis eum quia. Vel.
+        Officia deleniti atque neque perspiciatis nesciunt suscipit ipsa vero, itaque unde eum odio quod libero modi
+        quae eveniet? Repellendus saepe, fuga quia aliquam consequuntur tempora numquam earum soluta rem rerum.
+        <h3>Aca habra publicidad</h3>
+        Alias quas eveniet architecto reprehenderit porro aut dolor! Odit aut praesentium, commodi architecto beatae
+        magnam sit eveniet, molestias quibusdam itaque perferendis, eos eligendi ipsum ut qui. Perferendis ullam qui
+        vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsam reiciendis doloremque laborum,
+        corporis fuga dolor reprehenderit deserunt! Rem, ab ducimus unde iure sunt odio. Incidunt reprehenderit sint
+        aut quas!
         </p>
 
     </aside>
@@ -204,6 +209,8 @@
             dolore consequatur provident exercitationem perferendis expedita enim magnam possimus, fugit velit officiis
             reiciendis reprehenderit non, quis sapiente dolor.</p>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

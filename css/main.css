@@ -1,79 +1,17 @@
-.cabecera {
-  display: flex;
-  margin-bottom: 50px;
-  width: 100%;
-  background: linear-gradient(to bottom, hsla(182, 25%, 50%, 0.5), white);
-}
-.cabecera .logo {
-  height: 110px;
-  width: 1fr;
-  max-width: 500px;
-}
-.cabecera .navbar {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 90%;
-}
-.cabecera .navbar ul li a {
-  font-weight: bolder;
-  color: #6b6b83;
-}
-.cabecera .navbar ul li a:hover {
-  transform: scale 1.2;
-  color: #6b6b83;
-}
-.cabecera .navbar ul li a:active {
-  transform: scale 1.2;
-  color: #6b6b83;
-}
-.cabecera .navbar ul li a:visited {
-  color: #6b6b83;
-  font-weight: 500;
-}
+/* Error: expected "{".
+ *    ,
+ * 28 |                 =height: auto;
+ *    |                              ^
+ *    '
+ *   scss\main.scss 28:30  root stylesheet */
 
-.body-gral {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  /* NOTICIAS */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 28 \2502                  =height: auto;\d\a    \2502                               ^\a    \2575 \a   scss\\main.scss 28:30  root stylesheet';
 }
-.body-gral .cuerpo {
-  width: 70%;
-}
-.body-gral .publicidad {
-  height: auto;
-  float: right;
-  width: 29%;
-  padding-left: 15px;
-  padding-top: 15px;
-  margin-left: 15px;
-}
-.body-gral footer {
-  margin-left: 10px;
-  margin-top: 50px;
-}
-.body-gral .flex-noticias {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-.body-gral .flex-noticias .flex-item {
-  border: 1px solid black;
-  width: 25%;
-  padding: 5px;
-  margin: 5px;
-  flex: 10%;
-  display: flex;
-  flex-direction: column;
-}
-.body-gral .flex-noticias .flex-item .contenido {
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-.body-gral .flex-noticias .flex-item .card-footer {
-  padding: 10px;
-  background: #6b6b83;
-}
-
-/*# sourceMappingURL=main.css.map */
